@@ -4,8 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "lite-server",
+    "serve": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevAlexandreCR/store-app.git"
   },
   "author": "devalexandrecr@gmail.com",
   "license": "MIT",
