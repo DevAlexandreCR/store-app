@@ -6,11 +6,54 @@
 
     <!-- Bootstrap CSS    -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="https://kit.fontawesome.com/ed3fe15f98.js" crossorigin="anonymous"></script>
     <title>store app</title>
 </head>
 <body>
-<div class="container">
-    <h3>Store</h3>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Store app</h1>
+        <p class="lead">This is the best store</p>
+    </div>
+</div>
+<div class="container text-center">
+    <h3>Párrafo 1</h3>
+    <p>Esta es el párrafo 1 el cual dice muchas cosas acerca de ésta página, las cuales te van a encantar</p>
+    <h3>Párrafo 2</h3>
+    <p>Esta es el párrafo 2 el cual dice muchas cosas acerca de ésta página, las cuales te van a encantar</p>
+    <h3>Párrafo 3</h3>
+    <p>Esta es el párrafo 3 el cual dice muchas cosas acerca de ésta página, las cuales te van a encantar</p>
+
+    <div class="row d-flex">
+        <div class="col-sm-4 mt-2 mt-sm-0">
+            <div class="card shadow-sm card-product">
+                <div class="card-header">Producto 1</div>
+                <div class="card-body">Esta es la descripción del producto 1 cuya calidad es increible</div>
+                <div class="card-footer">
+                    <button class="btn btn-danger btn-sm">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mt-2 mt-sm-0">
+            <div class="card shadow-sm card-product">
+                <div class="card-header">Producto 2</div>
+                <div class="card-body">Esta es la descripción del producto 2 cuya calidad es increible</div>
+                <div class="card-footer">
+                    <button class="btn btn-danger btn-sm">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mt-2 mt-sm-0">
+            <div class="card shadow-sm card-product">
+                <div class="card-header">Producto 3</div>
+                <div class="card-body">Esta es la descripción del producto 3 cuya calidad es increible</div>
+                <div class="card-footer">
+                    <button class="btn btn-danger btn-sm">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -18,4 +61,35 @@
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+<footer class="text-center footer-style mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 footer-col">
+                <h3>Dirección</h3>
+                <address>
+                    Popayán - Colombia <br>
+                    Calle 16 # 3ce-39
+                </address>
+            </div>
+            <div class="col-md-4 footer-col">
+                <h3>Redes</h3>
+                <ul class="list-inline">
+                    <li>
+                        <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                    </li>
+                    <li>
+                        <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 footer-col">
+                <h3>Acerca de nosotros</h3>
+                <p>Sómos la mejor tienda del mundo mundial!</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
