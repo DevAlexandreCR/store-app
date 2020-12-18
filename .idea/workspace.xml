@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a8319f23-c62e-41f3-b095-7ed1fd81cb48" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../lokerstore/laradock" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.serve">
@@ -73,7 +77,8 @@
       <updated>1607984362442</updated>
       <workItem from="1607984363518" duration="1732000" />
       <workItem from="1608066227078" duration="9755000" />
-      <workItem from="1608217944073" duration="9492000" />
+      <workItem from="1608217944073" duration="10181000" />
+      <workItem from="1608239830622" duration="3051000" />
     </task>
     <servers />
   </component>
@@ -91,5 +96,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
