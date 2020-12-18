@@ -13,16 +13,16 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Store-app</a>
+        <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link" href="./prices.html">Precios</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Precios</a></li>
                 <li class="nav-item"><a class="nav-link" href="./legal.html">Términos y condiciones</a></li>
                 <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
             </ul>
@@ -33,67 +33,97 @@
         </div>
     </div>
 </nav>
-<div class="bg-danger">
+<div class="bg-light">
     <div class="container py-5">
-        <h1 class="display-4 text-white">Store app</h1>
-        <p class="lead text-white-50">This is the best store</p>
+        <h1 class="display-4">Store app</h1>
+        <p class="lead">This is the best store</p>
     </div>
 </div>
-<img class="img-banner img-fluid" src="./images/paisaje1.jpg" alt="paisaje">
-<div class="container text-center">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3>Párrafo 1</h3>
-            <p class="text-black-50">Esta es el párrafo 1 el cual dice muchas cosas acerca de ésta página, las cuales te van a encantar</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Párrafo 2</h3>
-            <p class="text-black-50">Esta es el párrafo 2 el cual dice muchas cosas acerca de ésta página, las cuales te van a encantar</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Párrafo 3</h3>
-            <p class="text-black-50">Esta es el párrafo 3 el cual dice muchas cosas acerca de ésta página, las cuales te van a encantar</p>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-sm-4 mt-2 mt-sm-0">
-            <div class="card shadow card-product">
-                <img src="./images/hotel1.jpg" class="card-img-top img-fluid img-product" alt="hotel1">
-                <div class="card-body">
-                    <h3 class="card-title">Producto 1</h3>
-                    <p class="card-text">Esta es la descripción del producto 1 cuya calidad es increible</p>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-danger btn-sm">Comprar</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 mt-2 mt-sm-0">
-            <div class="card shadow card-product">
-                <img src="./images/hotel2.jpg" class="card-img-top img-fluid img-product" alt="hotel2">
-                <div class="card-body">
-                    <h3 class="card-title">Producto 2</h3>
-                    <p class="card-text">Esta es la descripción del producto 2 cuya calidad es increible</p>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-danger btn-sm">Comprar</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 mt-2 mt-sm-0">
-            <div class="card shadow card-product">
-                <img src="./images/hotel3.jpg" class="card-img-top img-fluid img-product" alt="hotel3">
-                <div class="card-body">
-                    <h3 class="card-title">Producto 3</h3>
-                    <p class="card-text">Esta es la descripción del producto 3 cuya calidad es increible</p>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-danger btn-sm">Comprar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Precios</li>
+        </ol>
+    </nav>
+</div>
+<div class="container table-responsive">
+    <table class="table table-borderless table-striped">
+        <thead class="table-dark">
+        <th>Calidad</th>
+        <th>Armenia</th>
+        <th>Medellín</th>
+        <th>Bogotá</th>
+        <th>Popayán</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+            </td>
+            <td>$100</td>
+            <td>$120</td>
+            <td>$140</td>
+            <td>$180</td>
+        </tr>
+        <tr>
+            <td>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+            </td>
+            <td>$210</td>
+            <td>$230</td>
+            <td>$250</td>
+            <td>$280</td>
+        </tr>
+        <tr>
+            <td>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+            </td>
+            <td>$310</td>
+            <td>$340</td>
+            <td>$350</td>
+            <td>$380</td>
+        </tr>
+        <tr>
+            <td>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+            </td>
+            <td>$330</td>
+            <td>$350</td>
+            <td>$360</td>
+            <td>$390</td>
+        </tr>
+        <tr>
+            <td>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </td>
+            <td>$410</td>
+            <td>$440</td>
+            <td>$450</td>
+            <td>$480</td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 
 
