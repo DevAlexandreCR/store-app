@@ -24,7 +24,5 @@ footer .footer-below {
 }
 
 .card-product {
-    border-color: black;
-    background-color: #2d2c2c;
-    color: #c0c5c6;
+    font-family: Verdana;
 }
