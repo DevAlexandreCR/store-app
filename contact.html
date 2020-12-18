@@ -20,11 +20,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="./prices.html">Precios</a></li>
                 <li class="nav-item"><a class="nav-link" href="./legal.html">Términos y condiciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -33,56 +33,65 @@
         </div>
     </div>
 </nav>
-<div class="bg-danger">
+<div class="bg-light">
     <div class="container py-5">
-        <h1 class="display-4 text-white">Store app</h1>
-        <p class="lead text-white-50">This is the best store</p>
+        <h1 class="display-4">Store app</h1>
+        <p class="lead">This is the best store</p>
     </div>
 </div>
 <div class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">Home</li>
+            <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
         </ol>
     </nav>
 </div>
-<div class="container text-center">
-    <h3>Párrafo 1</h3>
-    <p>Esta es el párrafo 1 el cual dice muchas cosas acerca de ésta página, las cuales te van a encantar</p>
-    <h3>Párrafo 2</h3>
-    <p>Esta es el párrafo 2 el cual dice muchas cosas acerca de ésta página, las cuales te van a encantar</p>
-    <h3>Párrafo 3</h3>
-    <p>Esta es el párrafo 3 el cual dice muchas cosas acerca de ésta página, las cuales te van a encantar</p>
-
-    <div class="row d-flex">
-        <div class="col-sm-4 mt-2 mt-sm-0">
-            <div class="card shadow-sm card-product">
-                <div class="card-header">Producto 1</div>
-                <div class="card-body">Esta es la descripción del producto 1 cuya calidad es increible</div>
-                <div class="card-footer">
-                    <button class="btn btn-danger btn-sm">Comprar</button>
-                </div>
+<div class="container">
+    <h1>Deja tu comantario</h1>
+    <form action="">
+        <div class="form-row">
+            <div class="form-group col-sm-6">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" class="form-control" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="lastName">Apellido</label>
+                <input id="lastName" type="text" class="form-control" placeholder="Ingrese su apellido">
             </div>
         </div>
-        <div class="col-sm-4 mt-2 mt-sm-0">
-            <div class="card shadow-sm card-product">
-                <div class="card-header">Producto 2</div>
-                <div class="card-body">Esta es la descripción del producto 2 cuya calidad es increible</div>
-                <div class="card-footer">
-                    <button class="btn btn-danger btn-sm">Comprar</button>
-                </div>
+        <div class="form-group">
+            <label for="lastName">Email</label>
+            <input id="email" type="text" class="form-control" placeholder="example@example.com">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-9">
+                <label for="address">Dirección</label>
+                <input id="address" type="text" class="form-control" placeholder="Ingrese su domicilio">
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="city">Ciudad</label>
+                <select id="city" type="text" class="form-control">
+                    <option value="">Bogotá</option>
+                    <option value="">Cali</option>
+                    <option value="">Medellin</option>
+                    <option value="">Popayán</option>
+                    <option value="">Armenia</option>
+                </select>
             </div>
         </div>
-        <div class="col-sm-4 mt-2 mt-sm-0">
-            <div class="card shadow-sm card-product">
-                <div class="card-header">Producto 3</div>
-                <div class="card-body">Esta es la descripción del producto 3 cuya calidad es increible</div>
-                <div class="card-footer">
-                    <button class="btn btn-danger btn-sm">Comprar</button>
-                </div>
+        <div class="form-group col-sm-9">
+            <label for="comment">Comentario</label>
+            <textarea id="comment" rows="10" class="form-control" placeholder="Ingrese su comentario"></textarea>
+        </div>
+        <div class="form-group col-sm-9">
+            <div class="form-check">
+                <input id="check" type="checkbox"  class="form-check-input">
+                <label for="check" class="form-check-label">Quiero que me contacten</label>
             </div>
         </div>
-    </div>
+        <button class="btn btn-primary mt-2" type="submit">Enviar</button>
+    </form>
 </div>
 
 
@@ -104,13 +113,15 @@
                 <h3>Redes</h3>
                 <ul class="list-inline">
                     <li>
-                        <a  target="_blank" href="#" class="btn-social btn-outline"><i class="bi bi-facebook"></i></a>
+                        <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a  target="_blank" href="#" class="btn-social btn-outline"><i class="bi bi-google"></i></a>
+                        <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                class="fa fa-fw fa-google-plus"></i></a>
                     </li>
                     <li>
-                        <a  target="_blank" href="#" class="btn-social btn-outline"><i class="bi bi-twitter"></i></a>
+                        <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                class="fa fa-fw fa-twitter"></i></a>
                     </li>
                 </ul>
             </div>
