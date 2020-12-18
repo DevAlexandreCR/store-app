@@ -24,5 +24,17 @@ footer .footer-below {
 }
 
 .card-product {
-    font-family: Verdana;
+    font-family: Verdana, serif;
+}
+
+.img-banner{
+    min-width: 100%;
+    height: 18em;
+    object-fit: cover;
+}
+
+.img-product {
+    min-width: 100%;
+    height: 15em;
+    object-fit: cover;
 }
