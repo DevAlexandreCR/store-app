@@ -11,127 +11,160 @@
     <title>store app</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
-                <li class="nav-item active"><a class="nav-link" href="#">Precios</a></li>
-                <li class="nav-item"><a class="nav-link" href="./legal.html">Términos y condiciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+<div class="body">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./legal.html">Términos y condiciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-danger">
+        <div class="container py-5">
+            <h1 class="display-4 text-white">Store app</h1>
+            <p class="lead text-white-50">This is the best store</p>
         </div>
     </div>
-</nav>
-<div class="bg-light">
-    <div class="container py-5">
-        <h1 class="display-4">Store app</h1>
-        <p class="lead">This is the best store</p>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Precios</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#compare" role="tab" aria-controls="compare"
+                   data-bs-toggle="tab" aria-selected="false">Compara</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#targets" role="tab" aria-controls="targets"
+                   data-bs-toggle="tab" aria-selected="false">Terjetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#comments" role="tab" aria-controls="comments"
+                   data-bs-toggle="tab" aria-selected="false">Comentarios</a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content py-2">
+        <div class="tab-pane fade show active table-responsive container" id="compare">
+            <table class="table table-borderless table-striped">
+                <thead class="table-dark">
+                <th>Calidad</th>
+                <th>Armenia</th>
+                <th>Medellín</th>
+                <th>Bogotá</th>
+                <th>Popayán</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </td>
+                    <td>$100</td>
+                    <td>$120</td>
+                    <td>$140</td>
+                    <td>$180</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </td>
+                    <td>$210</td>
+                    <td>$230</td>
+                    <td>$250</td>
+                    <td>$280</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </td>
+                    <td>$310</td>
+                    <td>$340</td>
+                    <td>$350</td>
+                    <td>$380</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </td>
+                    <td>$330</td>
+                    <td>$350</td>
+                    <td>$360</td>
+                    <td>$390</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </td>
+                    <td>$410</td>
+                    <td>$440</td>
+                    <td>$450</td>
+                    <td>$480</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade show table-responsive container" id="targets">
+            <div class="card w-25">
+                <div class="card-header">Tarjetas aceptadas</div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-action">Tarjeta básica</li>
+                        <li class="list-group-item list-group-item-action">Tarjeta VIP</li>
+                        <li class="list-group-item list-group-item-action">Tarjeta Black</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade show table-responsive container" id="comments">
+            comentarios
+        </div>
     </div>
 </div>
-<div class="container">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Precios</li>
-        </ol>
-    </nav>
-</div>
-<div class="container table-responsive">
-    <table class="table table-borderless table-striped">
-        <thead class="table-dark">
-        <th>Calidad</th>
-        <th>Armenia</th>
-        <th>Medellín</th>
-        <th>Bogotá</th>
-        <th>Popayán</th>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-            </td>
-            <td>$100</td>
-            <td>$120</td>
-            <td>$140</td>
-            <td>$180</td>
-        </tr>
-        <tr>
-            <td>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-            </td>
-            <td>$210</td>
-            <td>$230</td>
-            <td>$250</td>
-            <td>$280</td>
-        </tr>
-        <tr>
-            <td>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-            </td>
-            <td>$310</td>
-            <td>$340</td>
-            <td>$350</td>
-            <td>$380</td>
-        </tr>
-        <tr>
-            <td>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-            </td>
-            <td>$330</td>
-            <td>$350</td>
-            <td>$360</td>
-            <td>$390</td>
-        </tr>
-        <tr>
-            <td>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-            </td>
-            <td>$410</td>
-            <td>$440</td>
-            <td>$450</td>
-            <td>$480</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
-<footer class="text-center  footer-style mt-4">
+<footer class="footer-style">
     <div class="container">
         <div class="row">
             <div class="col-md-4 footer-col">
@@ -162,4 +195,5 @@
         </div>
     </div>
 </footer>
+</body>
 </html>
