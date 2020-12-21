@@ -71,38 +71,93 @@
         <div class="row">
             <div class="col-sm-4 mt-2 mt-sm-0">
                 <div class="card shadow card-product">
+                    <button class="bi-chat-dots btn text-white position-absolute" data-bs-target="#contact" data-bs-toggle="modal"></button>
                     <img src="./images/hotel1.jpg" class="card-img-top img-fluid img-product" alt="hotel1">
                     <div class="card-body">
                         <h3 class="card-title">Producto 1</h3>
                         <p class="card-text">Esta es la descripción del producto 1 cuya calidad es increible</p>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-danger btn-sm">Comprar</button>
+                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#buy">
+                            <span class="bi bi-cash-stack"></span>
+                            Comprar
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 mt-2 mt-sm-0">
                 <div class="card shadow card-product">
+                    <button class="bi-chat-dots btn text-white position-absolute" data-bs-target="#contact" data-bs-toggle="modal"></button>
                     <img src="./images/hotel2.jpg" class="card-img-top img-fluid img-product" alt="hotel2">
                     <div class="card-body">
                         <h3 class="card-title">Producto 2</h3>
                         <p class="card-text">Esta es la descripción del producto 2 cuya calidad es increible</p>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-danger btn-sm">Comprar</button>
+                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#buy">
+                            <span class="bi bi-cash-stack"></span>
+                            Comprar
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 mt-2 mt-sm-0">
                 <div class="card shadow card-product">
+                    <button class="bi-chat-dots btn text-white position-absolute" data-bs-target="#contact" data-bs-toggle="modal"></button>
                     <img src="./images/hotel3.jpg" class="card-img-top img-fluid img-product" alt="hotel3">
                     <div class="card-body">
                         <h3 class="card-title">Producto 3</h3>
                         <p class="card-text">Esta es la descripción del producto 3 cuya calidad es increible</p>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-danger btn-sm">Comprar</button>
+                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#buy">
+                            <span class="bi bi-cash-stack"></span>
+                            Comprar
+                        </button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="contact" role="dialog" aria-labelledby="modalContact" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalContact">Contacto con la tienda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="email" class="col-form-label">Tu email:</label>
+                        <input type="email" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="col-form-label">Mensaje:</label>
+                        <textarea type="text" id="message" class="form-control" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="buy" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buyModalLabel">Confirmar Compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="address" class="col-form-label">Tu direccion:</label>
+                        <input type="address" id="address" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
                 </div>
             </div>
         </div>
