@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fin=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS    -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -74,7 +74,7 @@
                     <button class="bi-chat-dots btn text-white position-absolute" data-bs-target="#contact" data-bs-toggle="modal"></button>
                     <img src="./images/hotel1.jpg" class="card-img-top img-fluid img-product" alt="hotel1">
                     <div class="card-body">
-                        <h3 class="card-title">Producto 1</h3>
+                        <h3 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Primera cena gratis!">Producto 1</h3>
                         <p class="card-text">Esta es la descripción del producto 1 cuya calidad es increible</p>
                     </div>
                     <div class="card-footer">
@@ -82,6 +82,10 @@
                             <span class="bi bi-cash-stack"></span>
                             Comprar
                         </button>
+                        <a class="btn btn-info btn-sm" data-bs-toggle="popover"
+                                title="Información" data-bs-content="Esta es una informacion acerca del producto">
+                            <span class="bi bi-info"></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -90,7 +94,7 @@
                     <button class="bi-chat-dots btn text-white position-absolute" data-bs-target="#contact" data-bs-toggle="modal"></button>
                     <img src="./images/hotel2.jpg" class="card-img-top img-fluid img-product" alt="hotel2">
                     <div class="card-body">
-                        <h3 class="card-title">Producto 2</h3>
+                        <h3 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Primera cena gratis!">Producto 2</h3>
                         <p class="card-text">Esta es la descripción del producto 2 cuya calidad es increible</p>
                     </div>
                     <div class="card-footer">
@@ -98,6 +102,10 @@
                             <span class="bi bi-cash-stack"></span>
                             Comprar
                         </button>
+                        <a class="btn btn-info btn-sm" data-bs-toggle="popover"
+                           title="Información" data-bs-content="Esta es una informacion acerca del producto">
+                            <span class="bi bi-info"></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -106,7 +114,7 @@
                     <button class="bi-chat-dots btn text-white position-absolute" data-bs-target="#contact" data-bs-toggle="modal"></button>
                     <img src="./images/hotel3.jpg" class="card-img-top img-fluid img-product" alt="hotel3">
                     <div class="card-body">
-                        <h3 class="card-title">Producto 3</h3>
+                        <h3 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Primera cena gratis!">Producto 3</h3>
                         <p class="card-text">Esta es la descripción del producto 3 cuya calidad es increible</p>
                     </div>
                     <div class="card-footer">
@@ -114,6 +122,10 @@
                             <span class="bi bi-cash-stack"></span>
                             Comprar
                         </button>
+                        <a class="btn btn-info btn-sm" data-bs-toggle="popover"
+                           title="Información" data-bs-content="Esta es una informacion acerca del producto">
+                            <span class="bi bi-info"></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -163,9 +175,6 @@
         </div>
     </div>
 </div>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <footer class="footer-style">
     <div class="container">
         <div class="row">
@@ -197,5 +206,16 @@
         </div>
     </div>
 </footer>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.esm.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    $('[data-bs-toggle="popover"]').popover()
+  })
+</script>
 </body>
 </html>
