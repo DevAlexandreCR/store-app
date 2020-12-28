@@ -136,7 +136,8 @@
             </div>
             <div class="col-sm-4 mt-2 mt-sm-0">
                 <div class="card shadow card-product">
-                    <button class="bi-chat-dots btn text-white position-absolute" data-bs-target="#contact" data-bs-toggle="modal"></button>
+                    <button class="bi bi-chat-dots btn text-white position-absolute" id="contactBtn"
+                            data-bs-target="#contact" data-bs-toggle="modal"></button>
                     <img src="./images/hotel3.jpg" class="card-img-top img-fluid img-product" alt="hotel3">
                     <div class="card-body">
                         <h3 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Primera cena gratis!">Producto 3</h3>
@@ -242,6 +243,13 @@
     $('[data-bs-toggle="popover"]').popover()
     $('.carousel').carousel({
       interval: 3000
+    })
+
+    $('#contact').on('show.bs.modal', function (e) {
+      $('#contactBtn').removeClass('bi-chat-dots').addClass('bi-arrow-bar-up')
+    })
+    $('#contact').on('hidden.bs.modal', function (e) {
+      $('#contactBtn').removeClass('bi-arrow-bar-up').addClass('bi-chat-dots')
     })
   })
 </script>
