@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass -o css/ css/"
+    "scss": "sass css/:public/css/"
   },
   "repository": {
     "type": "git",
