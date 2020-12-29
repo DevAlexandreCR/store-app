@@ -10,6 +10,8 @@ RUN npm install
 
 RUN npm install -g sass --unsafe-perm
 
+RUN npm install -g less --unsafe-perm
+
 USER node
 
 COPY --chown=node:node . .
