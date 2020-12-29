@@ -8,7 +8,7 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN npm install -g node-sass --unsafe-perm
+RUN npm install -g sass --unsafe-perm
 
 USER node
 
