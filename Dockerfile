@@ -4,6 +4,12 @@ RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
 
 WORKDIR /home/node/app
 
+COPY package*.json ./
+
+RUN npm install
+
+RUN npm install -g node-sass --unsafe-perm
+
 USER node
 
 COPY --chown=node:node . .
