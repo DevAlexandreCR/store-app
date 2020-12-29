@@ -15,7 +15,9 @@
   "author": "devalexandrecr@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
