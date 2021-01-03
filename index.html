@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS    -->
+    <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <title>store app</title>
+    <!-- andbuild  -->
 </head>
-<body>
+<body>
 <div class="body">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
@@ -136,7 +137,8 @@
             </div>
             <div class="col-sm-4 mt-2 mt-sm-0">
                 <div class="card shadow card-product">
-                    <button class="bi-chat-dots btn text-white position-absolute" data-bs-target="#contact" data-bs-toggle="modal"></button>
+                    <button class="bi bi-chat-dots btn text-white position-absolute" id="contactBtn"
+                            data-bs-target="#contact" data-bs-toggle="modal"></button>
                     <img src="./images/hotel3.jpg" class="card-img-top img-fluid img-product" alt="hotel3">
                     <div class="card-body">
                         <h3 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Primera cena gratis!">Producto 3</h3>
@@ -231,11 +233,13 @@
         </div>
     </div>
 </footer>
+<!-- build:js dist/index.js-->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.esm.min.js"></script>
+
 <script>
   $(document).ready(function(){
     $('[data-bs-toggle="tooltip"]').tooltip()
@@ -243,7 +247,15 @@
     $('.carousel').carousel({
       interval: 3000
     })
+
+    $('#contact').on('show.bs.modal', function (e) {
+      $('#contactBtn').removeClass('bi-chat-dots').addClass('bi-arrow-bar-up')
+    })
+    $('#contact').on('hidden.bs.modal', function (e) {
+      $('#contactBtn').removeClass('bi-arrow-bar-up').addClass('bi-chat-dots')
+    })
   })
 </script>
+<!-- endbuild -->
 </body>
 </html>
