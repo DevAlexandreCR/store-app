@@ -7,11 +7,12 @@
     "serve": "lite-server",
     "start": "concurrently \"npm run watch:scss\" \"npm run serve\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass css/:public/css/",
+    "scss": "sass css/:dist/css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "clean": "rimraf dist",
     "imagemin": "imagemin images/* --out-dir dist/images",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin legal.html -d dist --htmlmin -o dist/legal.html && usemin contact.html -d dist --htmlmin -o dist/contact.html" 
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin legal.html -d dist --htmlmin -o dist/legal.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,6 @@
   "license": "MIT",
   "devDependencies": {
     "cssmin": "^0.4.3",
-    "gulp-imagemin": "^7.1.0",
     "htmlmin": "0.0.7",
     "lite-server": "^2.6.1",
     "onchange": "^7.1.0",
@@ -31,10 +31,9 @@
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
-    "bootstrap-icons": "^1.2.1",
+    "bootstrap-icons": "^1.2.2",
     "concurrently": "^5.3.0",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
-    "zlib": "^1.0.5"
+    "popper.js": "^1.16.1"
   }
 }
