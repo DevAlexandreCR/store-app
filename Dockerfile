@@ -8,8 +8,6 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN npm install -g sass --unsafe-perm=true --allow-root
-
 RUN set -x \
 	&& apk add --no-cache --virtual .build-deps \
 		autoconf \
@@ -20,7 +18,7 @@ RUN set -x \
         build-base \
         libpng-dev \
         nasm \
-	&& npm install --global imagemin-cli --unsafe-perm=true --allow-root \
+	&& npm install --global sass imagemin-cli grunt-cli --unsafe-perm=true --allow-root \
 	&& apk del .build-deps
 
 USER node
